@@ -15,7 +15,7 @@ public partial class SpaceShip : Node3D, IStateMachine
 
     public override void _Ready()
     {
-        _curState = Dorment();
+        _curState = Dormant();
         _quatYawPitch = Quaternion;
         TakeControlOfShip();
     }
@@ -50,9 +50,9 @@ public partial class SpaceShip : Node3D, IStateMachine
         _curState.Enter();
     }
     
-    private State Dorment()
+    private State Dormant()
     {
-        State state = new(nameof(Dorment));
+        State state = new(nameof(Dormant));
 
         return state;
     }

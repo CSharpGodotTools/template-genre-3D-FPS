@@ -4,7 +4,7 @@ using Template.UI;
 
 namespace Template.FPS3D;
 
-public partial class Player : CharacterBody3D
+public partial class Player
 {
     [Export] private OptionsManager _options;
     private Vector3 _cameraTarget;

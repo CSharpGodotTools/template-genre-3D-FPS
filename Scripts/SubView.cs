@@ -19,7 +19,7 @@ public partial class SubView : SubViewportContainer
         OptionsDisplay display = popupMenu
             .Options.GetNode<OptionsDisplay>("%Display");
 
-        display.OnResolutionChanged += (resolution) =>
+        display.OnResolutionChanged += _ =>
         {
             StretchShrink = _options.Options.Resolution;
         };

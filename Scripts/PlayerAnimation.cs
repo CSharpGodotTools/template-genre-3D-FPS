@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Template.FPS3D;
 
-public partial class Player : CharacterBody3D
+public partial class Player
 {
     [Export] private BoneAttachment3D _cameraBone;
     [Export] private AnimationTree _animTree;
@@ -24,7 +24,7 @@ public partial class Player : CharacterBody3D
         _camera = GetNode<Camera3D>("%Camera3D");
         _camOffset = _camera.Position - Position;
 
-        foreach (Node3D node in _nodeItems.GetChildren(false))
+        foreach (Node3D node in _nodeItems.GetChildren<Node3D>(false))
         {
             _items.Add(new Item(node));
         }
