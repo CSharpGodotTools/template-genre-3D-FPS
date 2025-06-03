@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-namespace Template.FPS3D;
+namespace __TEMPLATE__.FPS3D;
 
 public partial class Player : CharacterBody3D
 {

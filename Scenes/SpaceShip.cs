@@ -1,7 +1,7 @@
 using Godot;
 using GodotUtils;
 
-namespace Template.FPS3D;
+namespace __TEMPLATE__.FPS3D;
 
 [SceneTree]
 public partial class SpaceShip : Node3D, IStateMachine

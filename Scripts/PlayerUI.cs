@@ -1,8 +1,8 @@
 using Godot;
 using GodotUtils;
-using Template.UI;
+using __TEMPLATE__.UI;
 
-namespace Template.FPS3D;
+namespace __TEMPLATE__.FPS3D;
 
 public partial class Player
 {

@@ -1,6 +1,6 @@
 using Godot;
 
-namespace Template.FPS3D;
+namespace __TEMPLATE__.FPS3D;
 
 public partial class Player
 {

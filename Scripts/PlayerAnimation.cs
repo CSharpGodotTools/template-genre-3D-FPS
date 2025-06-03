@@ -2,7 +2,7 @@ using Godot;
 using GodotUtils;
 using System.Collections.Generic;
 
-namespace Template.FPS3D;
+namespace __TEMPLATE__.FPS3D;
 
 public partial class Player
 {
