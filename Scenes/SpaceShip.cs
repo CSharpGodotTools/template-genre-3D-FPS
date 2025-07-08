@@ -17,7 +17,6 @@ public partial class SpaceShip : Node3D, IStateMachine
     {
         _curState = Dormant();
         _quatYawPitch = Quaternion;
-        TakeControlOfShip();
     }
     
     public override void _PhysicsProcess(double delta)
@@ -115,18 +114,5 @@ public partial class SpaceShip : Node3D, IStateMachine
         };
 
         return state;
-    }
-
-    private void TakeControlOfShip()
-    {
-        /*_.Area3D.Get().BodyEntered += body =>
-        {
-            if (body is Player player)
-            {
-                SwitchState(Active());
-                player.QueueFree();
-                _.Camera3D.MakeCurrent();
-            }
-        };*/
     }
 }
